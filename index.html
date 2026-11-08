@@ -1,1035 +1,489 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Amith Ramdas Achari</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Amith Ramdas Achari | Machine Simulation &amp; Physical AI Engineer</title>
+	<meta name="description" content="Amith Ramdas Achari, Machine Simulation Engineer at Caterpillar building GPU-accelerated Physical AI simulation, real-time plant models and HIL/SIL validation for autonomous mining and construction machines." />
+	<meta property="og:title" content="Amith Ramdas Achari | Machine Simulation & Physical AI Engineer" />
+	<meta property="og:description" content="Building the physics that trains and validates autonomous heavy machines." />
+	<meta property="og:type" content="website" />
+	<meta name="theme-color" content="#07090f" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Navigation -->
+	<header class="nav" id="nav">
+		<div class="container nav__inner">
+			<a href="#top" class="nav__logo" aria-label="Home"><span class="mono">AA</span><span class="nav__dot"></span></a>
+			<nav class="nav__links" id="navLinks" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#recognition">Recognition</a>
+				<a href="#projects">Projects</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+				<a href="assets/Amith_Achari_Resume.pdf" class="btn btn--sm btn--outline" target="_blank" rel="noopener">Resume</a>
+			</nav>
+			<button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+		</div>
+	</header>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Amith Ramdas Achari</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="#Work_Experience">Work Experience</a></li>
-								<li><a href="#Projects">Projects</a></li>
-								<li><a href="https://www.linkedin.com/in/amithachari29/">LinkedIn</a></li>
-								<li><a href="https://github.com/amithachari">Github</a></li>
-								<li><a href="assets/Amith SE.pdf">Resume</a></li>
-								<li><a href="#About">About</a></li>
+	<!-- Hero -->
+	<section class="hero" id="top">
+		<canvas id="heroCanvas" aria-hidden="true"></canvas>
+		<div class="hero__glow" aria-hidden="true"></div>
+		<div class="container hero__content">
+			<p class="eyebrow reveal"><span class="pulse"></span> Machine Simulation Engineer · Physical AI &amp; Autonomy @ Caterpillar</p>
+			<h1 class="hero__title reveal">Building the physics that<br /><span class="gradient-text">trains autonomous machines.</span></h1>
+			<p class="hero__sub reveal">
+				I build <span class="typed" id="typed">GPU-accelerated Physical AI simulation</span><span class="caret"></span><br />
+				for Caterpillar's mining and construction fleet, from real-time plant models to closed-loop autonomy validation.
+			</p>
+			<div class="hero__cta reveal">
+				<a href="#experience" class="btn btn--primary">Explore my work <i class="fas fa-arrow-right"></i></a>
+				<a href="assets/Amith_Achari_Resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener"><i class="fas fa-file-download"></i> Download resume</a>
+			</div>
+			<ul class="hero__social reveal">
+				<li><a href="https://www.linkedin.com/in/amithachari29/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="https://github.com/amithachari" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+				<li><a href="mailto:amithachari29@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+		</div>
+		<a href="#impact" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+	</section>
 
-							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
-							</ul>
-						</nav>
-					</header>
+	<!-- Impact numbers -->
+	<section class="impact" id="impact">
+		<div class="container impact__grid">
+			<div class="stat reveal"><span class="stat__num" data-count="500">0</span><span class="stat__suffix"></span><p>machines simulated in parallel on GPU with NVIDIA Newton</p></div>
+			<div class="stat reveal"><span class="stat__num" data-count="20">0</span><span class="stat__suffix">+</span><p>NPI programs delivered with real-time plant models</p></div>
+			<div class="stat reveal"><span class="stat__num" data-count="10">0</span><span class="stat__suffix">x</span><p>faster real-time models vs. high-fidelity baselines</p></div>
+			<div class="stat reveal"><span class="stat__num" data-count="400">0</span><span class="stat__suffix">+</span><p>Innovation Challenge entries, and my idea won</p></div>
+		</div>
+	</section>
 
-				<!-- Menu -->
-					<section id="menu">
-
-						<!-- Search -->
-							<section>
-								<form class="search" method="get" action="#">
-									<input type="text" name="query" placeholder="Search" />
-								</form>
-							</section>
-
-						<!-- Links -->
-							<section>
-								<ul class="links">
-									<li>
-										<a href="#Work_Experience">
-											<h3>Work Experience</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#Projects">
-											<h3>Projects</h3></a>
-											<a href="#Planning"><p>▪ Path Planning for Autonomous Navigation</p></a>
-											<a href="#Autonomous"><p>▪ Autonomous Pipeline</p></a>
-											<a href="#Filtering"><p>▪ Filtering and Localization - Monte Carlo Localization (MCL)</p></a>
-											<a href="#Impedance"><p>▪ Impedance & Position control on a Catalyst 5 robot arm</p></a>
-											<a href="#Robust"><p>▪ Robust Controllers: Comparative Analysis (RSLQR & H-infinity controller)</p></a>
-											<a href="#Pick"><p>▪ Pick & Place Robot: Warehouse automation</p></a>
-
-										</a>
-									</li>
-									<!-- <li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
-										</a>
-									</li> -->
-								</ul>
-							</section>
-
-						<!-- Actions -->
-							<section>
-								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Log In</a></li>
-								</ul>
-							</section>
-
-					</section>
-					
-				<!-- Main -->
-					<div id="main">
-						
-						<h2 id="Work_Experience">Work Experience</h2>
-									<h1 ><a href="https://www.caterpillar.com/">Caterpillar</a></h1>
-									<h2>Machine Simulation Engineer </h2>
-									<blockquote> ▪ Real-Time Modeling Engineer
-										<br> ▪ Systems Integration and Validation Engineer
-										<br> ▪ Autonomy Middleware Software Engineer
-										<br> ▪ Machine Simulation Engineer - Co-op
-										</blockquote>
-
-									<h4>Accelerate Autonomy SW Validation in SIL Platform </h4>
-									<blockquote> ▪ End-to-End Autonomy System Integration: Integrated diverse components (vSET, Dynasty, sensor models, autonomy stack) to create a comprehensive simulation platform for end-to-end validation of autonomous functions.
-									<br> ▪ Early Validation Through HIL/SIL Integration: Championed "shift-left" validation by integrating Hardware-in-the-Loop (HIL) and Software-in-the-Loop (SIL) testing, enabling early detection of issues in autonomous control systems.
-									<br> ▪ Virtual Environment for Autonomy Validation: Created a virtual environment for validating L8 autonomy controls by developing a bridge between Windows and Linux for autonomy controls system.
-									<br> ▪ Cross-Platform Communication for System-Level Testing: Implemented virtual CAN and Ethernet communication between Windows and Linux, enabling system-level testing of autonomy software across different operating systems.
-									<br> ▪ Virtual Hardware Emulation: Emulated physical ECMs using virtual ports in a Linux environment to test and validate autonomy control system behavior in the absence of physical hardware.
-									<br> ▪ Control System Behavior Testing: Created custom scenarios to merge Auto 1 and Auto 2 tasks to test control system behavior within the simulation environment.
-									<br> ▪ Verification of Communication Integrity: Verified virtual CAN and Ethernet communication between Windows and Linux, which ensured for autonomous driving control system - successfully conducted calibrations using CAT-ET 
-									</blockquote>
-						
-									<h4>Assist in Real-Time Model Development - Troubleshoot & Debugging </h4>
-									<blockquote> ▪ Developed configurable real-time(RT) models in Dynasty (physics-based numerical solver) & Simulink for controls validation in SIL/HIL environment, requiring deep understanding of vehicle dynamics, hydraulics, powertrain & machine systems 
-									<br> ▪ Troubleshooting & Debugging Expertise: Assisted HIL teams by troubleshooting and debugging real-time models for HIL implementation.
-									<br> ▪ Model Replication & Validation: Replicated surface files for AD45B Test & Validation on the HIL bench using dxf input files and DAT files; verified maps in Dynasty using boundary conditions and visualized/tested 3D maps within Dynasty.
-									<br> ▪ EH Steering Model Development: Created a simplified, real-time EH steer hydraulics model capable of handling autonomy commands from HIL, modularizing the system for parameterization and integration with other EH steering machines.
-									<br> ▪ Dynasty Model Support: Provided support to an India-based team with Dynasty modeling, ensuring consistency across models developed by US and India teams.
-									<br> ▪ L6 Model Integration: Integrated multiple subsystems to create an L6 Model, simplifying individual subsystems and comparing them against a baseline model.
-									<br> ▪ Simplified Braking and Hoist Systems: Simplified brakes and hoist hydraulic systems within models, reducing flexible structures to rigid body models.
-									<br> ▪ Pressure Controller Map Creation: Developed a pressure controller map from scratch, validating it against a baseline transmission model.
-									<br> ▪ Performance Optimization: Removed redundant joints and bodies to enhance the real-time performance of systems and added sensors (GPS & IMU) to the Dynasty model. <br>
-									</blockquote>
-
-									<h4>Autonomy Middleware Engineer - Rotation </h4>
-									<blockquote> ▪ High-Fidelity Sensor Simulation & C++ Development: Engineered high-performance C++ virtual sensors for Honeywell HGuide IMU3 and BCam2 to mimic physical hardware behaviors using UDP protocols and GStreamer pipelines. These simulations bridged the gap between Software-in-the-Loop (SIL) and Hardware-in-the-Loop (HIL) environments, enabling "left-shift" validation of autonomy drivers and reducing dependencies on physical hardware availability.
-									<br> ▪ Embedded Systems Integration & Deployment: Integrated virtual sensors into the Autonomy Integration System (AIS) middleware stack by converting raw binaries into managed AIS tasks and deploying them onto target physical ECMs (A7Z1) and Linux platforms. Mastered the end-to-end embedded workflow, including cross-compilation, generating software flash files, and performing firmware updates on base machine controllers to ensure seamless hardware-software integration.
-									<br> ▪ Fault Injection & System Robustness Validation: Enhanced system reliability by architecting a fault injection framework within the virtual sensors to simulate edge cases, sensor failures, and data corruption. This initiative validated the autonomy drivers' error-handling logic and safety mechanisms, resulting in the identification and resolution of critical driver defects prior to field deployment.
-									<br> ▪ Full-Stack Autonomy Workflow Optimization: Analyzed the complete autonomy data pipeline from Back-office planning through the Autonomy layer to Base Machine ECMs, identifying bottlenecks in communication interfaces. Leveraged this holistic architectural understanding to optimize existing SIL/HIL bench setups, significantly accelerating debugging cycles and improving the fidelity of Dynasty simulation models.
-									<br> ▪ Automated Testing Pipeline & Technical Documentation: Established a permanent integration testing suite using the developed virtual sensors to validate driver stability across software releases, preventing regression bugs. Authored comprehensive technical documentation for sensor configuration and participated in rigorous C++ code reviews, driving code quality standards and ensuring the long-term maintainability of the middleware codebase.
-									</blockquote>
-									
-									<h4>Hybrid HIL-SIL Platform </h4>
-									<blockquote> ▪ Hybrid Simulation Platform Development: Integrated multiple virtual application controls (DLLs) into a higher fidelity hybrid SIL/HIL machine real-time plant model for enhanced software development and validation.
-									<br> ▪ Integrated & resolved multiple issues on L4 to L8 HIL benches enabling validation of multiple ECMs + Autonomy ECM
-									<br> ▪ Collaborated with cross-functional teams to seamlessly integrate system improvements, enhancing simulation efficiency and performance while ensuring compatibility with overall system requirements 
-									<br> ▪ Co-Simulation Implementation: Converted a high-fidelity model to real-time, enabling active co-simulation between Dynasty and vSET using a custom Python User Component, which was a new capability.
-									<br> ▪ Workflow Automation: Created scripts to automate repetitive tasks such as converting vSET XML files to CSV format, removing virtual ECMs from configuration files (reducing work time by 10 hours per release), enabling efficient workflows.
-									<br> ▪ Communication Interface Development: Collaborated to create a Python User Component for TCP communication, developing client and server scripts for Dynasty and vSET to streamline data exchange.
-									<br> ▪ Troubleshooting and Issue Resolution: Collaborated with control software engineers and test engineers to troubleshoot and identify issues in the HIL bench, identifying variables and setting them to the correct values.
-									<br> ▪ XML File Implementation: Implemented multiple functionalities within XML files, custom-scripting as necessary to fulfill requirements.
-									<br> ▪ Reduced Monotonous Work: Reduced monotonous work by created several scripts.
-									<br> ▪ Hardware-in-the-Loop integration and testing: Test cases were verified for future integration process
-									</blockquote>
-
-									<h4>Machine Simulation Engineer (Co-op)</h4>
-									<blockquote>▪ FMU generation and validation for QCT777 control module to ensure similar output as Cosimulation (Simulink – Dynasty).
-										<br>▪ Developing L5 & L6 real-time machine models from high-fidelity VPD models to generate functional mockup units (FMUs).
-										Using fmi_adapter to wrap FMUs for co-simulation of physical models into ROS nodes.
-										<br>▪ Validation of FMI compliant models for plant & controls combined in python and CPP, using FMPy and CPPFMU interface. 
-										</blockquote>
-
-									<h3 ><a href="http://xfinito.com/">Xfinito Biodesigns Pvt Ltd</a></h3>
-									<h4>Product Development Engineer Intern</h4>
-									<blockquote>▪ Designed and analyzed wearable device in a cross-functional environment, considering mechanical and ergonomic aspects to
-										determine the optimal placement of electronic components to prevent neurodegenerative disorder.
-										<br>▪ Presented innovative solutions in several pitch competitions, received 2nd runner-up in Medtechnovation.
-										 </blockquote>
-									
-									<h3 ><a href="https://www.youtube.com/c/TeamHeliosRacing">Team Helios Racing</a></h3>
-									<h4>Powertrain Engineer</h4>
-									<p>▪ Testing & Validation lead at the official BAJA Club of our college comprising of 50 students. Led the team to become the 
-										National Champions at Enduro Student India, among 60 teams from all over the nation.</p>										
-										<h5>Continuously Variable Transmission (CVT) for an All-Terrain Vehicle </h5>
-										<blockquote>▪ Implemented ‘Force Multiplication’ mechanism in the primary clutch to reduce the rotational inertia of the system, with
-											adjustable performance determining parameters to make it highly tunable.
-											<br>▪ Devised a custom test rig to simulate the vehicle dynamics and tune the CVT. The testing results were compared with the
-											simulation results based on the readings provided by the sensors on primary and secondary pulley. </blockquote>
-						<iframe width="500" height="320"
-							src="https://www.youtube.com/embed/FdQ3yWMpZbI?autoplay=1&mute=1&loop=1">
-							</iframe>
-									
-						<!-- Post -->
-						<h2 id="Projects">Projects</h2>
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2 id="Planning"><a href="single.html">Path Planning for Autonomous Navigation</a></h2>
-										<p>Implemented planning module (Dubin’s RRT* and Hybrid A*) and deployed on GEM vehicle for autonomous 
-											navigation using off-the-stack model predictive controller</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">Feb 2022 - May 2022</time>
-										<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-									</div>
-								</header>
-								<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-								<iframe width="600" height="400"
-								src="https://www.youtube.com/embed/eCgasHrPLh4?autoplay=1&mute=1&loop=1">
-								</iframe>
-								<p>▪ Designed and implemented planning module (Dubin’s RRT* and Hybrid A*) and deployed on GEM vehicle for autonomous 
-									navigation using off-the-stack model predictive controller while considering non-holonomic constraints. 
-									<br>▪ Leveraged a priori maps to investigate performance of each algorithm and studied effects of different hyperparameters. 
-									 </p>
-								<footer>
-									<ul class="actions">
-										<li><a href="https://github.com/amithachari/ECE484_Final_Project" ></a></li>
-									</ul>
-									<ul class="stats">
-										<li> ROS | Python | C++ </li>
-									</ul>
-								</footer>
-							</article>
-						
-							
-						<!-- Post2 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Autonomous"><a href="single.html">Autonomous Pipeline</a></h2>
-									<p>Pipeline containing perception, decision making and low-level PD control modules</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - May 2022</time>
-									<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/-8g3MKFTQhc?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Integrated autonomous agent pipeline containing perception, decision making and low-level PD control modules (track steering
-								angle and velocity) for the agent to perform lane tracking on a racetrack while avoiding obstacles (other stationary vehicles).
-								<br>▪ Formulated decision module to return reference velocity, modified lateral error, and lane heading error, based on current state
-								(GPS), obstacle distance (LiDAR), and lateral error & lane heading error - computed in the lane detection module (Camera). 
-								 </p>
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Autonomous_Pipeline" ></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Python | Gazebo | RViz </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post3 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Filtering"><a href="single.html">Filtering and Localization - Monte Carlo Localization (MCL) </a></h2>
-									<p>Implemented passive MCL localization to estimate position of a moving vehicle</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Feb 2022 - April 2022</time>
-									<a href="https://github.com/amithachari/Filtering_and_Localization" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/AAfQPT1FK_Y?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Implemented passive MCL localization to estimate position of a moving vehicle using LiDAR measurements.
-								 <br>▪ Studied parameters namely sensor models (4 & 8 directions), number of particles and sensor limits to detect obstacle in range. 
-								</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Filtering_and_Localization" ></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Python | Gazebo | RViz </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post4 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Impedance"><a href="single.html">Impedance & Position control on a Catalyst 5 robot arm </a></h2>
-									<p>Task space PD control with friction compensation to avoid obstacles and follow optimized trajectory</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Feb 2022 - April 2022</time>
-									<a href="https://github.com/amithachari/ME446_Robot_Dynamics_and_Control_lab" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/jAs9Y0I4wnY?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Devised task space PD control with friction compensation to avoid obstacles and follow optimized trajectory. 
-								<br>▪ Impedance control was used to make the robot's end-effector compliant enough to follow the trajectory inside a zigzag groove
-								and a peg hole, and force of at least 50N was applied to push an egg vertically without breaking it.  </p>
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/ME446_Robot_Dynamics_and_Control_lab" ></a></li>
-								</ul>
-								<ul class="stats">
-									<li> C | MATLAB </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post5 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Robust"><a href="single.html">Robust Controllers: Comparative Analysis (RSLQR & H-infinity controller) </a></h2>
-									<p>RSLQR Controller & H-Infinity Controller to command acceleration (Az) for an aircraft</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Oct 2021 - Feb 2022</time>
-									<a href="https://github.com/amithachari/Robust-Controllers-RSLQR-H-infinity-controller" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<p>▪ Designed an RSLQR Controller to command acceleration (Az) for an aircraft using state feedback. The design point was
-								identified by analyzing LQR charts, and the robustness was validated using the small gain theorem.<br>▪ The results were compared to those of an H-infinity state feedback controller designed with gamma iteration to control Az.  </p>
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Robust-Controllers-RSLQR-H-infinity-controller" ></a></li>
-								</ul>
-								<ul class="stats">
-									<li> MATLAB </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post6 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Pick"><a href="single.html">Pick & Place Robot: Warehouse automation </a></h2>
-									<p>Sorting using UR5 Robot - Warehouse</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Feb 2022 - April 2022</time>
-									<a href="https://github.com/amithachari/ur5_ROS-Gazebo" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/bSLL_NA9660?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Implemented kinematically feasible trajectories on UR5 to grab items from a conveyor using multiple suction grippers to sort
-								the objects based on size, and color in Gazebo environment while optimizing the trajectory and considering the constraints.
-								<br>▪ Dynamic motion planning was done using MoveIt, in response to the motion planning request provided by the vision node.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/ur5_ROS-Gazebo"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Gazebo | Python | RViz </li>
-								</ul>
-							</footer>
-						</article>	
-
-						<!-- Post6 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Vehicle Model and Control | State feedback</a></h2>
-									<p>Implement the path following controller</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/EmergencyBrakingSimulation" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/qx8Lr2ULOj8?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Implement the path following controller to
-								drive the simulated vehicle along the given trajectory.<br>
-								▪ The path following controller produced by this gain matrix
-								performs a PD-control. It uses a PD-controller to correct along-track error for longitude control. The lateral control is also a PD-controller for cross-track error because δθ is related to the derivative of δy.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/EmergencyBrakingSimulation"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Gazebo | Python | RViz </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post7 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Safety of automatic emergency braking</a></h2>
-									<p>Emergency braking - Pedestrian Detection</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/EmergencyBrakingSimulation" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://user-images.githubusercontent.com/64373075/172037212-a31f7c49-24a2-4fe6-a2f1-1040f3702039.gif">
-							</iframe>
-							<p>▪ The vehicle starts from position (0, 0) and cruises down a straight road in the x-direction. A static pedestrian
-								is placed at position (60, 0) in the middle of the road. The vehicle uses LIDAR to detect the pedestrian and
-								once the pedestrian is detected (Dsense ≤ d(t)), the vehicle will start braking at constant deceleration user
-								provided. The vehicle will keep decelerating until its speed reaches 0.<br>
-								▪ Tried different values of the parameters Dsense, v0, ab, Treact and record corresponding d(t) after the
-								vehicle is stopped. Compared the results from simulation with the invariants.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/EmergencyBrakingSimulation"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Gazebo | Python | RViz </li>
-								</ul>
-							</footer>
-						</article>
-						<!-- Post8 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Lane Detection</a></h2>
-									<p>Typical Lane Detection Pipeline</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/LaneDetection" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/a3YowtNYIdM?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Detect lane lines in a little more flexible conditions (curvature, lighting variations, camera distortions) using computer vision techniques. <br> ▪ Use color transforms, gradients, etc., to create a thresholded binary image. <br>
-							▪ Apply a perspective transform to rectify binary image ("birds-eye view"). <br>
-							▪ Detect lane pixels and fit to find the lane boundary. <br>
-							▪ Determine the curvature of the lane and vehicle position with respect to center. <br>
-							▪ Warp the detected lane boundaries back onto the original image.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/LaneDetection"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Gazebo | Python | RViz </li>
-								</ul>
-							</footer>
-						</article>
-						<!-- Post9 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Naive Bayes</a></h2>
-									<p>Spam Classifier using Naive Bayes</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/Naive_Bayes.git" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="images/Result.png">
-							</iframe>
-							<p>▪ Built a Naive Bayes classifier to predict the class of an email (spam or ham). <br> ▪ Used a training set of spam and ham emails to train the classifier. <br>
-							▪ Used a development set of spam and ham emails to test the accuracy of the classifier. <br>
-							▪ Increased the accuracy of the classifier by 6% using Bigram model from Unigram model.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Naive_Bayes.git"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> Python | AI | Probability | Numpy</li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post10 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Search</a></h2>
-									<p>Breadth-first search (BFS) and A* search algorithms to solve pacman-like maze puzzles</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/Search.git" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="images/MP3/BFS.png">
-							</iframe>
-							<p>▪ Used the Manhattan Distance as the A* heuristic function for mazes with a single waypoint and heapq data structure <br> ▪ Used the Minimum Spanning Tree (MST) as the A* heuristic function for mazes with multiple waypoints. <br>
-							▪ Developed an admissible heuristic function for A* search that takes into account multiple waypoints. <br>
-							▪ Tested the implementations on a variety of mazes and achieved optimal solutions.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Search.git"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> Python | AI | Probability | PyGame | </li>
-								</ul>
-							</footer>
-						</article>
-						
-						<!-- Post11 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Hidden Markov Model</a></h2>
-									<p>Implementation of part of speech (POS) tagging using an HMM model</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/HMM_POS_Tagging.git" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="images/MP3/HMM.png">
-							</iframe>
-							<p>▪ Implemented a Hidden Markov Model (HMM) for part-of-speech (POS) tagging. <br> 
-							▪ Used the Viterbi algorithm to decode the HMM and assign POS tags to words. <br>
-							▪ Used Laplace smoothing to improve the accuracy of the POS tagger on unseen words. <br>
-							▪ Obtained an overall accuracy of 95.5% on the Brown development dataset. <br>
-							▪ Beat the baseline POS tagger on both overall accuracy and unseen word accuracy.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/HMM_POS_Tagging.git"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> Python | AI | Probability | Hidden Markov Models </li>
-								</ul>
-							</footer>
-						</article>
-						
-						<!-- Post12 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="Safety"><a href="single.html">Two Player Games</a></h2>
-									<p>Implementation of chess player using Minimax, Alpha-Beta Pruning and Stochastic Search</p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - Feb 2022</time>
-									<a href="https://github.com/amithachari/TwoPlayerGames.git" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							<iframe width="600" height="400"
-							src="https://www.youtube.com/embed/_4uvgpKoO3g?autoplay=1&mute=1&loop=1">
-							</iframe>
-							<p>▪ Implemented three different search algorithms for a game of Go: minimax, alpha-beta, and stochastic. <br> 
-							▪ Minimax is a recursive algorithm that searches all possible moves and their outcomes, and then chooses the move that leads to the best possible outcome. <br>
-							▪ Alpha-beta is a more efficient version of minimax that prunes away branches of the search tree that cannot lead to the best possible outcome. <br>
-							▪ Stochastic search is a less efficient algorithm that randomly explores different paths through the search tree. <br>
-							▪ Tested the three algorithms against a random-move agent and found that they all significantly outperformed the random-move agent.
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/TwoPlayerGames.git"></a></li>
-								</ul>
-								<ul class="stats">
-									<li> Python | AI | Probability | PyGame </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post -->
-						
-							<!--article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Elements</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-10-18">October 18, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-
-								<section>
-									<h3>Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3>Lists</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h4>Unordered</h4>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h4>Alternate</h4>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h4>Ordered</h4>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h4>Icons</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h3>Actions</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<h3>Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button disabled">Disabled</span></li>
-										<li><span class="button disabled icon solid fa-download">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3>Form</h3>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-								<section>
-									<h3>Image</h3>
-									<h4>Fit</h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h4>Left &amp; Right</h4>
-									<p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-							</article>
-						-->
-
-						<!-- Pagination -->
-							<!-- <ul class="actions pagination">
-								<li><a href="" class="disabled button large previous">Previous Page</a></li>
-								<li><a href="#" class="button large next">Next Page</a></li>
-							</ul> -->
-
+	<!-- About -->
+	<section class="section" id="about">
+		<div class="container about">
+			<div class="about__text reveal">
+				<p class="section__kicker">01 · About</p>
+				<h2 class="section__title">Simulation engineer at the intersection of <span class="gradient-text">physics, software &amp; autonomy.</span></h2>
+				<p>
+					I'm a Machine Simulation Engineer at <strong>Caterpillar</strong>, where I build simulations that let engineering teams develop and validate
+					machine control and autonomy software before a physical machine is ever available. My work spans the full stack: from
+					converting high-fidelity physics models into real-time plant models, to integrating virtual and physical controllers on HIL/SIL benches,
+					to writing C++ sensor simulators for the autonomy stack.
+				</p>
+				<p>
+					Today I lead the development of <strong>GPU-accelerated Physical AI simulation</strong> on NVIDIA Newton and Isaac Sim, where hundreds of
+					haul trucks run in parallel to train and test autonomy, and I'm building <strong>agentic AI pipelines</strong> that turn engineering data into
+					sim-ready machine models in days instead of months.
+				</p>
+				<p>
+					I hold a Master's in Mechanical Engineering (Robotics) from the <strong>University of Illinois Urbana-Champaign</strong>.
+				</p>
+			</div>
+			<div class="about__side reveal">
+				<div class="card card--glass">
+					<h3 class="card__label">Focus areas</h3>
+					<ul class="focus">
+						<li><i class="fas fa-microchip"></i><div><strong>Physical AI simulation</strong><span>NVIDIA Newton, Isaac Sim, Warp, MuJoCo</span></div></li>
+						<li><i class="fas fa-robot"></i><div><strong>Agentic AI pipelines</strong><span>Automated sim-ready model generation &amp; validation</span></div></li>
+						<li><i class="fas fa-tachometer-alt"></i><div><strong>Real-time plant modeling</strong><span>Powertrain, hydraulics, steering, structures</span></div></li>
+						<li><i class="fas fa-network-wired"></i><div><strong>HIL / SIL validation</strong><span>Virtual ECUs, CAN, co-simulation, autonomy stack</span></div></li>
+					</ul>
+				</div>
+				<div class="edu">
+					<div class="edu__item">
+						<span class="edu__year">2022</span>
+						<div><strong>University of Illinois Urbana-Champaign</strong><span>M.S. Mechanical Engineering, Robotics · GPA 3.81/4.00</span></div>
 					</div>
+					<div class="edu__item">
+						<span class="edu__year">2020</span>
+						<div><strong>RV College of Engineering, India</strong><span>B.E. Mechanical Engineering · CGPA 8.90/10.0</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-				<!-- Sidebar -->
-					<section id="sidebar">
+	<!-- Featured: Physical AI -->
+	<section class="section section--feature">
+		<div class="container">
+			<div class="feature reveal">
+				<div class="feature__text">
+					<p class="section__kicker">Featured · 2026</p>
+					<h2>AT745 articulated truck in <span class="gradient-text">NVIDIA Newton</span></h2>
+					<p>
+						I led a 4-engineer team, none of whom had used Newton before, to deliver the organization's first GPU-native Caterpillar machine model.
+						It has a kinematically linked, articulated multibody model, a real-time tire model and a custom L4 powertrain layer,
+						and it is integrated with deformable terrain, sensors and the autonomy stack for closed-loop simulation.
+					</p>
+					<ul class="chips">
+						<li>NVIDIA Newton</li><li>Isaac Sim</li><li>Warp</li><li>MuJoCo</li><li>Python</li><li>Agentic AI</li>
+					</ul>
+				</div>
+				<div class="feature__metrics">
+					<div><span class="big">500</span><p>trucks simulated concurrently</p></div>
+					<div><span class="big">2.03x</span><p>faster than real time at scale</p></div>
+					<div><span class="big">4</span><p>physics solvers benchmarked</p></div>
+					<div><span class="big">Months → Days</span><p>model build time with agentic pipeline</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFfITdgiKG64Q/profile-displayphoto-shrink_400_400/0/1629769350297?e=1661990400&v=beta&t=KcqAjhP2qBUxU1ersY6wQZesnoc-0SZiCSzXevcbwU8" alt="" /></a>
-								<header>
-									<h2>Amith Ramdas Achari</h2>
-									<p>Robotics | Dynamics | Controls | Self-Driving | Systems </p>
-								</header>
-							</section>
+	<!-- Experience -->
+	<section class="section" id="experience">
+		<div class="container">
+			<p class="section__kicker reveal">02 · Experience</p>
+			<h2 class="section__title reveal">Where I've built things</h2>
 
-						<!-- Mini Posts -->
-							<!-- <section>
-								<div class="mini-posts"> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Caterpillar</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Rutrum neque accumsan</a></h3>
-												<time class="published" datetime="2015-10-19">October 19, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Odio congue mattis</a></h3>
-												<time class="published" datetime="2015-10-18">October 18, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic06.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Enim nisl veroeros</a></h3>
-												<time class="published" datetime="2015-10-17">October 17, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic07.jpg" alt="" /></a>
-										</article> -->
-
-								<!-- </div>
-							</section> -->
-
-						<!-- Posts List -->
-							<!-- <section>
-								<ul class="posts">
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Convallis maximus nisl mattis nunc id lorem</a></h3>
-												<time class="published" datetime="2015-10-15">October 15, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Euismod amet placerat vivamus porttitor</a></h3>
-												<time class="published" datetime="2015-10-10">October 10, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Magna enim accumsan tortor cursus ultricies</a></h3>
-												<time class="published" datetime="2015-10-08">October 8, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Congue ullam corper lorem ipsum dolor</a></h3>
-												<time class="published" datetime="2015-10-06">October 7, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a>
-										</article>
-									</li>
-								</ul>
-							</section> -->
-
-						<!-- About -->
-							<section class="blurb">
-								<h2 id="About">About</h2>
-								<p>Hey, I'm Amith, a Roboticist! I have worked with robots ranging from robotic arms to an Autonomous Vehicles. 
-									My focus has been Controls, Motion Planning and AI. I have worked on industrial robots to simulate a warehouse-like environment in Gazebo and then do a hardware implementation of the same on robotic arm (UR5) to pick and place objects. Dynamic, and control implementation to designing and developing optimization algorithms. Currently, I am working with a few researchers on a Autonomous Electric Vehicle to simulate a RRT* algorithm with LQR based heuristics to determine a smooth trajectory for non-holonomic constrained navigation. These projects equipped me with a solid foundation in ROS, C++, Python, Motion Planning, Controls, Kinematics, and Dynamics.<ul class="actions">
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<!-- <section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-							</section> -->
-
-					</section>
-
+			<div class="company reveal">
+				<div class="company__head">
+					<div class="company__logo">CAT</div>
+					<div>
+						<h3>Caterpillar Inc.</h3>
+						<p>Machine Simulation Engineer · Physical AI &amp; Autonomy</p>
+					</div>
+					<span class="company__date">Jan 2023 – Present · Champaign, IL</span>
+				</div>
+				<ul class="company__highlights">
+					<li><i class="fas fa-award"></i> <span>Ranked in the <strong>top 2%</strong> of the engineering workforce with a <strong>"Superior"</strong> rating, personally recognized by the Senior VP</span></li>
+					<li><i class="fas fa-globe-asia"></i> <span>Selected for an <strong>International Technical Assignment</strong> to the India Tech Center to train engineers and standardize workflows</span></li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="timeline">
+				<article class="tl reveal">
+					<div class="tl__marker"><i class="fas fa-microchip"></i></div>
+					<div class="tl__body">
+						<div class="tl__meta"><span class="tag tag--hot">Current</span><span>2025 – Present</span></div>
+						<h3>Physical AI: GPU-Accelerated Machine Simulation</h3>
+						<p class="tl__lead">Bringing Caterpillar machines into NVIDIA Newton and Isaac Sim for massively parallel autonomy training and validation.</p>
+						<ul>
+							<li>Led a <strong>4-engineer team</strong> with no prior Newton experience to deliver the organization's <strong>first AT745 truck model</strong> in NVIDIA Newton</li>
+							<li>Built GPU-parallel engine, torque converter, transmission, steering, hoist and brake models in <strong>Python/Warp</strong>, validated against Dynasty</li>
+							<li>Scaled to <strong>500 trucks simulated concurrently</strong> at 2.03x real time; benchmarked PhysX, MuJoCo, XPBD and Kamino solvers</li>
+							<li>Architected an <strong>agentic AI pipeline</strong> that generates validated sim-ready models from engineering data (Dynasty/CAD), cutting build time <strong>from months to days</strong></li>
+							<li>Ported Simulink controls to GPU through <strong>AI-assisted Simulink → C → Warp</strong> kernel conversion, avoiding manual rewrites</li>
+							<li>Delivered a <strong>closed-loop autonomy demo</strong> integrating terrain, tire and sensor models with the autonomy stack across 4 teams</li>
+							<li>Automated Robotics dataset generation by replaying Dynasty results in Isaac Sim and exporting <strong>ROS bags</strong></li>
+							<li>Proposed residual sim-to-sim calibration for learned fidelity correction, selected as a <strong>Spring 2026 Innovation Challenge finalist</strong></li>
+						</ul>
+						<ul class="chips chips--sm"><li>Newton</li><li>Isaac Sim</li><li>Warp</li><li>MuJoCo</li><li>Python</li><li>pytest</li><li>AI agents</li></ul>
+					</div>
+				</article>
 
-	</body>
+				<article class="tl reveal">
+					<div class="tl__marker"><i class="fas fa-satellite-dish"></i></div>
+					<div class="tl__body">
+						<div class="tl__meta"><span class="tag">Rotation</span><span>2025</span></div>
+						<h3>Autonomy Middleware Engineer</h3>
+						<p class="tl__lead">Embedded C++ sensor simulation for the autonomy software stack.</p>
+						<ul>
+							<li>Engineered a high-fidelity <strong>C++ virtual sensor framework</strong> emulating Honeywell HGuide IMU3 and BCam2 hardware sensors</li>
+							<li>Implemented real-time sensor streaming (<strong>&lt;5 ms</strong>) and command responses using socket programming and GStreamer pipelines</li>
+							<li>Integrated virtual sensors into the autonomy stack and deployed them on <strong>A7Z1 vECUs</strong> and Linux targets</li>
+							<li>Designed a fault-injection architecture (saturation, corruption, dropouts), uncovering <strong>15+ critical driver defects</strong>; now part of release integration testing</li>
+						</ul>
+						<ul class="chips chips--sm"><li>C++</li><li>GStreamer</li><li>Sockets</li><li>Embedded Linux</li><li>Fault injection</li></ul>
+					</div>
+				</article>
+
+				<article class="tl reveal">
+					<div class="tl__marker"><i class="fas fa-code-branch"></i></div>
+					<div class="tl__body">
+						<div class="tl__meta"><span class="tag">Innovation winner</span><span>2024 – 2025</span></div>
+						<h3>Accelerated Autonomy Software Validation in SIL</h3>
+						<p class="tl__lead">A "left-shift" L8 SIL framework that runs production controllers, autonomy software and plant models together on a PC.</p>
+						<ul>
+							<li>Championed "left-shift" SIL validation with vECUs replacing physical HIL dependencies, <strong>increasing validation velocity by 35%</strong></li>
+							<li>Integrated vECU DLLs, plant models, sensor simulation (lidar, radar, GPS, IMU) and the autonomy stack end to end, <strong>cutting test-bench reliance by ~30%</strong></li>
+							<li>Developed custom CAN drivers (<strong>Vector / SocketCAN</strong>) for CAN-over-Ethernet between Windows vECUs and the Linux autonomy stack</li>
+							<li>Delivered SIL frameworks for the 793 Electric and 775NG programs, enabling up to <strong>30x faster</strong> execution than HIL</li>
+							<li>Won the <strong>Spring 2025 Innovation Challenge</strong> among 400+ submissions</li>
+						</ul>
+						<ul class="chips chips--sm"><li>vECU</li><li>CAN</li><li>UDP/TCP</li><li>Windows ↔ Linux</li><li>Python</li></ul>
+					</div>
+				</article>
+
+				<article class="tl reveal">
+					<div class="tl__marker"><i class="fas fa-cogs"></i></div>
+					<div class="tl__body">
+						<div class="tl__meta"><span class="tag">Core</span><span>2023 – Present</span></div>
+						<h3>Real-Time Plant Modeling &amp; Hybrid HIL/SIL Validation</h3>
+						<p class="tl__lead">Real-time machine models used on test benches in the US, India and Australia.</p>
+						<ul>
+							<li>Architected a hybrid HIL/SIL platform coupling plant models with the autonomy stack across <strong>500+ regression scenarios</strong></li>
+							<li>Converted high-fidelity models into real-time HIL/SIL plant models for <strong>20+ NPI programs</strong>, running up to <strong>10x faster</strong></li>
+							<li>Developed a reusable EH steering real-time module configurable to <strong>50 machine variants</strong>, adopted on <strong>7+ programs</strong></li>
+							<li>Root-caused <strong>50+ issues</strong> across HIL benches (US/India), including a systemic engine plant defect spanning 5 machine models</li>
+							<li>Built the <strong>first Dynasty–vSET real-time co-simulation</strong>; automation scripts saved ~10 hours per software release</li>
+							<li>Built an electric-drive HIL co-simulation with multi-rate motor control DLLs and PLC links over <strong>OPC-UA and TCP/IP</strong></li>
+							<li>Migrated a legacy Fortran tire model to modern C++ (CMake, Eigen, Boost, SUNDIALS) for cross-platform use</li>
+							<li>Grew the team by <strong>3 engineers</strong> through recruiting and mentoring, ramping them up to own model deliveries independently</li>
+						</ul>
+						<ul class="chips chips--sm"><li>Dynasty</li><li>Simulink</li><li>dSPACE</li><li>vSET</li><li>CANape</li><li>C++</li></ul>
+					</div>
+				</article>
+
+				<article class="tl reveal">
+					<div class="tl__marker"><i class="fas fa-flask"></i></div>
+					<div class="tl__body">
+						<div class="tl__meta"><span class="tag">Co-op &amp; Intern</span><span>May 2022 – Dec 2022</span></div>
+						<h3>Machine Simulation Engineer: Co-op &amp; Intern</h3>
+						<ul>
+							<li>Generated and validated FMUs for a control module, matching Simulink–Dynasty co-simulation output</li>
+							<li>Developed L5/L6 real-time machine models from high-fidelity models and wrapped FMUs as ROS nodes via fmi_adapter</li>
+							<li>Validated FMI-compliant plant and control models in Python and C++ using FMPy and CPPFMU</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+
+			<div class="other-exp">
+				<article class="mini reveal">
+					<div class="mini__head"><h3><a href="http://xfinito.com/" target="_blank" rel="noopener noreferrer">Xfinito Biodesigns</a></h3><span>Product Development Intern</span></div>
+					<p>Designed a wearable device for neurodegenerative disorders, optimizing mechanical, ergonomic and electronics placement. 2nd runner-up at Medtechnovation.</p>
+				</article>
+				<article class="mini reveal">
+					<div class="mini__head"><h3><a href="https://www.youtube.com/c/TeamHeliosRacing" target="_blank" rel="noopener noreferrer">Team Helios Racing</a></h3><span>Powertrain Engineer · 2016 – 2020</span></div>
+					<p>Led testing &amp; validation for the official BAJA team (50 students) to become <strong>National Champions</strong> at Enduro Student India among 60 teams. Designed a "force-multiplication" CVT validated against rig data.</p>
+					<button class="link-btn" data-video="FdQ3yWMpZbI"><i class="fas fa-play"></i> Watch the vehicle</button>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- Recognition -->
+	<section class="section section--alt" id="recognition">
+		<div class="container">
+			<p class="section__kicker reveal">03 · Recognition</p>
+			<h2 class="section__title reveal">Awards &amp; milestones</h2>
+			<div class="awards">
+				<div class="award reveal"><i class="fas fa-trophy"></i><h3>Innovation Challenge Winner</h3><p>Spring 2025, 1st among 400+ submissions for accelerating autonomy software validation in SIL</p></div>
+				<div class="award reveal"><i class="fas fa-lightbulb"></i><h3>2x Innovation Finalist</h3><p>Fall 2025 and Spring 2026, the latter for residual sim-to-sim calibration that advanced to the Innovation SHED</p></div>
+				<div class="award reveal"><i class="fas fa-medal"></i><h3>Top 2% · "Superior"</h3><p>Ranked in the top 2% of the engineering workforce, recognized by the Senior VP</p></div>
+				<div class="award reveal"><i class="fas fa-plane-departure"></i><h3>International Assignment</h3><p>Selected to train engineers and standardize workflows at the India Tech Center</p></div>
+				<div class="award reveal"><i class="fas fa-microphone"></i><h3>2x RAPID Presenter</h3><p>Presented at Caterpillar's internal technical conference</p></div>
+				<div class="award reveal"><i class="fas fa-flag-checkered"></i><h3>National Champions</h3><p>Enduro Student India with Team Helios Racing, among 60 teams</p></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="section" id="projects">
+		<div class="container">
+			<p class="section__kicker reveal">04 · Projects</p>
+			<h2 class="section__title reveal">Robotics, autonomy &amp; AI projects</h2>
+			<div class="filters reveal" role="tablist">
+				<button class="filter is-active" data-filter="all">All</button>
+				<button class="filter" data-filter="autonomy">Autonomy</button>
+				<button class="filter" data-filter="robotics">Robotics &amp; Controls</button>
+				<button class="filter" data-filter="ai">AI</button>
+			</div>
+
+			<div class="projects">
+				<article class="project reveal" data-cat="autonomy">
+					<button class="project__media" data-video="eCgasHrPLh4" aria-label="Play Path Planning video"><img loading="lazy" src="https://img.youtube.com/vi/eCgasHrPLh4/hqdefault.jpg" alt="Path planning demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Feb – May 2022</span>
+						<h3>Path Planning for Autonomous Navigation</h3>
+						<p>Dubins-constrained RRT* and Hybrid A* planners deployed on a GEM vehicle with MPC trajectory tracking under non-holonomic constraints.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>Python</li><li>C++</li></ul><a href="https://github.com/amithachari/ECE484_Final_Project" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="autonomy">
+					<button class="project__media" data-video="-8g3MKFTQhc" aria-label="Play Autonomous Pipeline video"><img loading="lazy" src="https://img.youtube.com/vi/-8g3MKFTQhc/hqdefault.jpg" alt="Autonomous pipeline demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Jan – May 2022</span>
+						<h3>Autonomous Pipeline</h3>
+						<p>Perception, decision-making and PD control fusing LiDAR, camera and GPS for lane tracking and obstacle avoidance on a racetrack.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>Gazebo</li><li>C++</li></ul><a href="https://github.com/amithachari/Autonomous_Pipeline" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="autonomy">
+					<button class="project__media" data-video="AAfQPT1FK_Y" aria-label="Play Monte Carlo Localization video"><img loading="lazy" src="https://img.youtube.com/vi/AAfQPT1FK_Y/hqdefault.jpg" alt="Monte Carlo localization demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Feb – Apr 2022</span>
+						<h3>Monte Carlo Localization</h3>
+						<p>Passive particle-filter localization of a moving vehicle from LiDAR, studying sensor models, particle counts and range limits.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>Python</li><li>Gazebo</li></ul><a href="https://github.com/amithachari/Filtering_and_Localization" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="robotics">
+					<button class="project__media" data-video="jAs9Y0I4wnY" aria-label="Play Impedance Control video"><img loading="lazy" src="https://img.youtube.com/vi/jAs9Y0I4wnY/hqdefault.jpg" alt="Robot arm impedance control demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Feb – Apr 2022</span>
+						<h3>Impedance &amp; Position Control: CRS Catalyst 5</h3>
+						<p>Task-space PD control with friction compensation and impedance control for compliant manipulation, applying ~50 N to an egg without breaking it.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>C</li><li>MATLAB</li></ul><a href="https://github.com/amithachari/ME446_Robot_Dynamics_and_Control_lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="robotics">
+					<button class="project__media" data-video="bSLL_NA9660" aria-label="Play UR5 Pick and Place video"><img loading="lazy" src="https://img.youtube.com/vi/bSLL_NA9660/hqdefault.jpg" alt="UR5 pick and place demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Feb – Apr 2022</span>
+						<h3>Pick &amp; Place: Warehouse Automation</h3>
+						<p>UR5 sorting from a conveyor with multiple suction grippers by size and color, using MoveIt for dynamic motion planning from vision.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>MoveIt</li><li>Gazebo</li></ul><a href="https://github.com/amithachari/ur5_ROS-Gazebo" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="autonomy">
+					<button class="project__media" data-video="qx8Lr2ULOj8" aria-label="Play Vehicle Control video"><img loading="lazy" src="https://img.youtube.com/vi/qx8Lr2ULOj8/hqdefault.jpg" alt="Vehicle path following demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Jan – Feb 2022</span>
+						<h3>Vehicle Model &amp; State-Feedback Control</h3>
+						<p>Path-following controller with PD along-track and cross-track error correction for a simulated vehicle.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>Python</li></ul><a href="https://github.com/amithachari/EmergencyBrakingSimulation" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="autonomy">
+					<a class="project__media" href="https://github.com/amithachari/EmergencyBrakingSimulation" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://user-images.githubusercontent.com/64373075/172037212-a31f7c49-24a2-4fe6-a2f1-1040f3702039.gif" alt="Automatic emergency braking simulation" /></a>
+					<div class="project__body">
+						<span class="project__date">Jan – Feb 2022</span>
+						<h3>Safety of Automatic Emergency Braking</h3>
+						<p>LiDAR-based pedestrian detection and braking, sweeping sensing range, speed and reaction time to verify safety invariants.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>ROS</li><li>Python</li></ul><a href="https://github.com/amithachari/EmergencyBrakingSimulation" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="ai">
+					<button class="project__media" data-video="a3YowtNYIdM" aria-label="Play Lane Detection video"><img loading="lazy" src="https://img.youtube.com/vi/a3YowtNYIdM/hqdefault.jpg" alt="Lane detection demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">Jan – Feb 2022</span>
+						<h3>Lane Detection</h3>
+						<p>Thresholding, bird's-eye perspective transforms and polynomial lane fitting to estimate curvature and vehicle offset.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>OpenCV</li><li>Python</li></ul><a href="https://github.com/amithachari/LaneDetection" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="robotics">
+					<div class="project__media project__media--art"><i class="fas fa-plane"></i></div>
+					<div class="project__body">
+						<span class="project__date">Oct 2021 – Feb 2022</span>
+						<h3>Robust Controllers: RSLQR vs. H∞</h3>
+						<p>RSLQR state-feedback controller for aircraft acceleration command, validated with the small-gain theorem and compared to an H∞ design.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>MATLAB</li><li>Robust control</li></ul><a href="https://github.com/amithachari/Robust-Controllers-RSLQR-H-infinity-controller" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="ai">
+					<button class="project__media" data-video="_4uvgpKoO3g" aria-label="Play Two Player Games video"><img loading="lazy" src="https://img.youtube.com/vi/_4uvgpKoO3g/hqdefault.jpg" alt="Two player game AI demo" /><span class="play"><i class="fas fa-play"></i></span></button>
+					<div class="project__body">
+						<span class="project__date">2022</span>
+						<h3>Two-Player Game AI</h3>
+						<p>Minimax, alpha-beta pruning and stochastic search agents that significantly outperform a random-move baseline.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>Python</li><li>Search</li></ul><a href="https://github.com/amithachari/TwoPlayerGames" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="ai">
+					<a class="project__media" href="https://github.com/amithachari/Search" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/MP3/BFS.png" alt="BFS and A* maze search" /></a>
+					<div class="project__body">
+						<span class="project__date">2022</span>
+						<h3>Search: BFS &amp; A*</h3>
+						<p>Maze solving with Manhattan and MST-based admissible heuristics for single and multiple waypoints, achieving optimal paths.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>Python</li><li>A*</li></ul><a href="https://github.com/amithachari/Search" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="ai">
+					<a class="project__media" href="https://github.com/amithachari/HMM_POS_Tagging" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/MP3/HMM.png" alt="Hidden Markov Model POS tagging" /></a>
+					<div class="project__body">
+						<span class="project__date">2022</span>
+						<h3>HMM Part-of-Speech Tagging</h3>
+						<p>Viterbi decoding with Laplace smoothing, reaching <strong>95.5%</strong> accuracy on the Brown dataset and beating the baseline.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>Python</li><li>HMM</li></ul><a href="https://github.com/amithachari/HMM_POS_Tagging" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+
+				<article class="project reveal" data-cat="ai">
+					<a class="project__media" href="https://github.com/amithachari/Naive_Bayes" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="images/Result.png" alt="Naive Bayes spam classifier results" /></a>
+					<div class="project__body">
+						<span class="project__date">2022</span>
+						<h3>Naive Bayes Spam Classifier</h3>
+						<p>Spam/ham email classifier; moving from unigram to bigram features improved accuracy by <strong>6%</strong>.</p>
+						<div class="project__foot"><ul class="chips chips--sm"><li>Python</li><li>NumPy</li></ul><a href="https://github.com/amithachari/Naive_Bayes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section class="section section--alt" id="skills">
+		<div class="container">
+			<p class="section__kicker reveal">05 · Skills</p>
+			<h2 class="section__title reveal">Toolbox</h2>
+			<div class="skills">
+				<div class="skill reveal">
+					<h3><i class="fas fa-brain"></i> Physical AI &amp; Simulation</h3>
+					<ul class="chips"><li>NVIDIA Isaac Sim</li><li>Newton</li><li>Warp</li><li>MuJoCo</li><li>PhysX</li><li>USD</li><li>Agentic AI</li></ul>
+				</div>
+				<div class="skill reveal">
+					<h3><i class="fas fa-code"></i> Languages &amp; Tools</h3>
+					<ul class="chips"><li>C++</li><li>Python</li><li>MATLAB</li><li>Bash</li><li>Linux</li><li>Git</li><li>CMake</li><li>pytest</li><li>Azure DevOps</li></ul>
+				</div>
+				<div class="skill reveal">
+					<h3><i class="fas fa-sliders-h"></i> Modeling &amp; Controls</h3>
+					<ul class="chips"><li>Simulink</li><li>Dynasty</li><li>dSPACE ControlDesk</li><li>FMI / FMU</li><li>Vehicle dynamics</li><li>Hydraulics</li><li>Powertrain</li></ul>
+				</div>
+				<div class="skill reveal">
+					<h3><i class="fas fa-network-wired"></i> Integration &amp; Comms</h3>
+					<ul class="chips"><li>HIL / SIL</li><li>vSET</li><li>Vector CAN</li><li>SocketCAN</li><li>CANape</li><li>CANalyzer</li><li>UDP/TCP</li><li>OPC-UA</li><li>GStreamer</li></ul>
+				</div>
+				<div class="skill reveal">
+					<h3><i class="fas fa-robot"></i> Robotics &amp; Autonomy</h3>
+					<ul class="chips"><li>ROS</li><li>Gazebo</li><li>CARLA</li><li>RViz</li><li>MoveIt</li><li>Motion planning</li><li>MPC</li><li>Localization</li></ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section class="section contact" id="contact">
+		<div class="container contact__inner reveal">
+			<p class="section__kicker">06 · Contact</p>
+			<h2 class="contact__title">Let's build the next generation of <span class="gradient-text">autonomous machines.</span></h2>
+			<p>Open to conversations about Physical AI, simulation, robotics and autonomy.</p>
+			<div class="hero__cta">
+				<a href="mailto:amithachari29@gmail.com" class="btn btn--primary"><i class="fas fa-envelope"></i> amithachari29@gmail.com</a>
+				<a href="https://www.linkedin.com/in/amithachari29/" class="btn btn--ghost" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+				<a href="https://github.com/amithachari" class="btn btn--ghost" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__inner">
+			<span>© <span id="year"></span> Amith Ramdas Achari</span>
+			<span class="mono">Champaign, IL</span>
+		</div>
+	</footer>
+
+	<!-- Video modal -->
+	<div class="modal" id="videoModal" aria-hidden="true" role="dialog" aria-label="Video player">
+		<div class="modal__backdrop" data-close></div>
+		<div class="modal__content">
+			<button class="modal__close" data-close aria-label="Close video"><i class="fas fa-times"></i></button>
+			<div class="modal__frame" id="videoFrame"></div>
+		</div>
+	</div>
+
+	<script src="assets/js/site.js"></script>
+</body>
 </html>
-
